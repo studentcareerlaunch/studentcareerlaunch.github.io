@@ -69,11 +69,16 @@
       font-size: 18px;
     }
 
-    .audience {
+    .audience,
+    .steps,
+    .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       margin-top: 30px;
+    }
+
+    .audience {
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .audience div {
@@ -84,11 +89,36 @@
       font-weight: bold;
     }
 
+    .steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .step {
+      padding: 25px 15px;
+      background: white;
+      border-top: 5px solid #f28c28;
+      border-radius: 15px;
+      box-shadow: 0 8px 22px rgba(23, 107, 135, 0.12);
+    }
+
+    .step-number {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      padding-top: 7px;
+      color: white;
+      background: #176b87;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .step h3 {
+      color: #176b87;
+    }
+
     .cards {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      margin-top: 30px;
     }
 
     .card {
@@ -132,6 +162,7 @@
       }
 
       .audience,
+      .steps,
       .cards {
         grid-template-columns: 1fr;
       }
@@ -163,6 +194,36 @@
       <div>Students building their first projects</div>
       <div>Recent graduates seeking opportunities</div>
       <div>Anyone preparing for their first career step</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-number">1</span>
+        <h3>Apply</h3>
+        <p>Tell us about yourself and your goals.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">2</span>
+        <h3>Build</h3>
+        <p>Create practical evidence of your abilities.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">3</span>
+        <h3>Prepare</h3>
+        <p>Improve your CV and practise interviews.</p>
+      </div>
+
+      <div class="step">
+        <span class="step-number">4</span>
+        <h3>Launch</h3>
+        <p>Take confident steps toward your career.</p>
+      </div>
     </div>
   </section>
 
