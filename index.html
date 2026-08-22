@@ -4,81 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graduate Launchpad</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #17324d;
-      background: #f4f8fb;
+      color: #18324b;
+      background: #f7fbff;
+      line-height: 1.6;
     }
 
     header {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
       color: white;
-      background: #176b87;
+      background: linear-gradient(135deg, #12385b, #1b8aa6);
     }
 
     header h1 {
-      margin: 0 0 12px;
-      font-size: 40px;
+      margin: 0 0 15px;
+      font-size: 48px;
     }
 
     header p {
-      margin: 0;
-      font-size: 19px;
-    }
-
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    h2 {
-      color: #176b87;
+      margin: 0 auto 25px;
+      max-width: 600px;
+      font-size: 20px;
     }
 
     .button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 14px 24px;
+      padding: 14px 28px;
       color: white;
       background: #f28c28;
-      border-radius: 8px;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    .button:hover {
+      background: #d96f0b;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #176b87;
+      font-size: 32px;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 25px;
+      gap: 25px;
+      margin-top: 30px;
     }
 
     .card {
-      padding: 25px;
+      padding: 30px 22px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px #ccd8df;
+      border-radius: 18px;
+      box-shadow: 0 8px 22px rgba(23, 107, 135, 0.15);
+    }
+
+    .icon {
+      font-size: 42px;
+    }
+
+    .card h3 {
+      color: #176b87;
+    }
+
+    .cta {
+      color: white;
+      background: #176b87;
+    }
+
+    .cta h2 {
+      color: white;
     }
 
     footer {
-      padding: 25px;
+      padding: 28px 20px;
       text-align: center;
       color: white;
-      background: #17324d;
+      background: #12385b;
     }
 
     @media (max-width: 700px) {
-      .cards {
-        grid-template-columns: 1fr;
+      header {
+        padding: 60px 20px;
       }
 
       header h1 {
-        font-size: 32px;
+        font-size: 36px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -88,17 +127,17 @@
   <header>
     <h1>Graduate Launchpad</h1>
     <p>Build practical career evidence before your first job.</p>
+    <a class="button" href="https://forms.gle/K8epRcXmjMajZcwDA" target="_blank">
+      Get Started
+    </a>
   </header>
 
   <section>
-    <h2>Welcome</h2>
-    <p>
-      We help students and recent graduates create projects, improve their CVs,
-      prepare for interviews, and take practical steps toward their careers.
+    <h2>Start Your Career Journey</h2>
+    <p class="intro">
+      We help students and recent graduates turn their potential into practical
+      projects, stronger CVs, and greater interview confidence.
     </p>
-    <a class="button" href="https://forms.gle/Q4xSq48AQwJJGiZN7" target="_blank">
-      Get Started
-    </a>
   </section>
 
   <section>
@@ -106,20 +145,31 @@
 
     <div class="cards">
       <div class="card">
+        <div class="icon">🚀</div>
         <h3>Build Projects</h3>
         <p>Create practical work that demonstrates your skills.</p>
       </div>
 
       <div class="card">
+        <div class="icon">📄</div>
         <h3>Improve Your CV</h3>
         <p>Present your experience clearly and confidently.</p>
       </div>
 
       <div class="card">
+        <div class="icon">🎯</div>
         <h3>Prepare for Interviews</h3>
         <p>Practise answers and build confidence for job interviews.</p>
       </div>
     </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Take the Next Step?</h2>
+    <p>Tell us what you need and begin building your career evidence.</p>
+    <a class="button" href="https://forms.gle/K8epRcXmjMajZcwDA" target="_blank">
+      Join Graduate Launchpad
+    </a>
   </section>
 
   <footer>
